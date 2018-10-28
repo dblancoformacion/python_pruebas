@@ -11,7 +11,6 @@ class persona():
 		txt+=str(self.__edad)+' años y residente en ' 
 		txt+=self.__residencia
 		return txt
-
 class empleado(persona):
 	def __init__(self,nombre,edad,residencia,salario,inicio):
 		super().__init__(nombre,edad,residencia)
