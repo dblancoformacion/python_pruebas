@@ -21,7 +21,10 @@ def cuadro(ancho,texto):
 	return txt
 
 conn = mysql.connector.connect(
-	host='172.31.128.235',
+	#host='127.0.0.1',
+	#user='root',
+	#password='',
+	host='10.0.2.15',
 	user='oceanografico',
 	password='lamar',
 	database='oceano'
