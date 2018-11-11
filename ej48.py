@@ -1,6 +1,7 @@
 # termostato
 
 import mysql.connector
+import matplotlib
 
 conn = mysql.connector.connect(
 	host='192.168.1.51',
@@ -10,8 +11,8 @@ conn = mysql.connector.connect(
 )
 rs=conn.cursor()
 rs.execute("""
-	SELECT * FROM temperaturas ORDER BY id DESC LIMIT 1;
+	SELECT * FROM temperaturas;
 	""")
 r=rs.fetchall()
-for i in r:
-	print(i[1])
+
+for i in r:	print(i)
