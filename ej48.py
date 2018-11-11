@@ -10,7 +10,7 @@ conn = mysql.connector.connect(
 )
 rs=conn.cursor()
 rs.execute("""
-	SELECT * FROM temperaturas;
+	SELECT * FROM temperaturas ORDER BY id DESC LIMIT 1;
 	""")
 r=rs.fetchall()
 for i in r:
