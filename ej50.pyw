@@ -1,4 +1,4 @@
-# termostato
+r# termostato
 
 import mysql.connector
 import matplotlib
@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 conn = mysql.connector.connect(
-	host='192.168.1.51',
-	user='python',
-	password='python',
+	host='localhost',
+	user='root',
+	password='',
 	database='db2017',
 )
 rs=conn.cursor()
