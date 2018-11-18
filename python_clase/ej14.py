@@ -7,7 +7,7 @@ conn = mysql.connector.connect(
 		host='localhost',
 		user='root',
 		password='',
-		database='eoi',
+		database='ieo',
 	)
 rs=conn.cursor()
 rs.execute(
