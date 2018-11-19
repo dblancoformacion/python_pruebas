@@ -7,12 +7,12 @@ conn = mysql.connector.connect(
 		host='localhost',
 		user='root',
 		password='',
-		database='ieo',
+		database='eoi',
 	)
 rs=conn.cursor()
 rs.execute(
 	'''
-SELECT DISTINCT A3_ESP_CAT FROM ieo WHERE
+SELECT DISTINCT A3_ESP_CAT FROM pesca WHERE
   RESPONSABLE_MUESTREO='ESTHER MÉNDEZ FERNÁNDEZ';
 	'''
 	)
@@ -26,7 +26,7 @@ for i in especies:
 	tallas_i=[]
 	rs.execute(
 '''
-SELECT TALLA FROM ieo WHERE
+SELECT TALLA FROM pesca WHERE
   RESPONSABLE_MUESTREO='ESTHER MÉNDEZ FERNÁNDEZ'
   AND A3_ESP_CAT="'''+i+'''";
 '''
