@@ -1,5 +1,5 @@
 # mongoDB
-# en c:\xampp\mongodb
+# en c:\xampp\mongodb\bin
 # mongod -dbpath data/db1
 
 from pymongo import MongoClient
