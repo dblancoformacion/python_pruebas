@@ -6,7 +6,7 @@ doc = openpyxl.load_workbook(
 	'../data/test.xlsx')
 x = np.linspace(0, 2 * np.pi, 20)
 y = np.sin(x)
-
+# recorro la variable y con un contador
 for i in range(len(y)):
 	coordenada='A'+str(i+1)
 	print(coordenada,y[i])
